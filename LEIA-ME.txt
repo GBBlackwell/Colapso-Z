@@ -1,0 +1,30 @@
+COLAPSO Z — LOJA GAMER TEMÁTICA ZUMBI
+
+Arquivos:
+- index.html: site estático com catálogo, filtros, carrinho e geração de resumo de pedido.
+- tema-colapso-zumbi.png: imagem de referência usada no banner.
+
+COMO TESTAR
+1. Extraia o ZIP.
+2. Abra index.html no Chrome, Edge ou Firefox.
+3. Adicione produtos ao carrinho e teste a geração do resumo do pedido.
+
+IMPORTANTE
+Esta é uma primeira versão visual/funcional de front-end. Ela NÃO processa pagamentos reais e NÃO entrega itens automaticamente.
+Os nomes e preços são exemplos editáveis no array `catalog` no fim do index.html.
+Antes de vender:
+- troque produtos/preços por ofertas reais e permitidas pelas regras dos jogos;
+- configure contato, política de privacidade, termos, reembolso e dados da empresa;
+- integre um provedor de pagamento (ex.: Mercado Pago ou outro disponível para sua empresa);
+- confirme pagamento no servidor por webhook assinado antes de liberar qualquer item;
+- conecte a entrega ao sistema/API do jogo, quando permitido;
+- nunca solicite senha de contas de jogo.
+
+PUBLICAR
+Opção simples: Netlify Drop
+1. Acesse https://app.netlify.com/drop
+2. Arraste a pasta extraída (ou os arquivos do site) para a área de envio.
+3. Use a URL temporária gerada para testar.
+4. Para domínio próprio, compre/conecte o domínio nas configurações do serviço.
+
+Alternativas: GitHub Pages ou Cloudflare Pages. Para pagamentos e entrega automática reais, será necessário também um backend seguro; não coloque chaves secretas no HTML.
